@@ -11,7 +11,7 @@ const connectDB = require("./config/db");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(require("cors")());
 app.use(bodyParser.json());
 
 // Routes
